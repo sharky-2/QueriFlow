@@ -18,6 +18,8 @@
     flex-direction: column;
 
     position: relative;
+    overflow: hidden;
+
 }
 #header .text-frame .rank-frame {
     position: absolute;
@@ -34,9 +36,13 @@
     padding: 10px 20px;
     border: .5px solid var(--dark-white);
     border-radius: 100px;
+    font-family: var(--text-font);
 
     transition: all .3s;
-    &:hover {padding: 10px 25px;}
+    &:hover {
+        padding: 10px 25px;
+        background-color: var(--dark-white);
+    }
     cursor: pointer;
 }
 
@@ -53,3 +59,11 @@
 #header .keybinds-frame a:nth-child(4) {bottom: 150px; right: 20px; transform: rotate(-10deg); --rotation: -10deg;} 
 #header .keybinds-frame a:nth-child(5) {top: 20px; right: 150px; transform: rotate(20deg); --rotation: 20deg;}
 #header .keybinds-frame a:active {transform: scale(.9) rotate(var(--rotation));}
+#header .keybinds-frame a:nth-child(odd) {animation: rotate_bind_1 5s infinite alternate;}
+#header .keybinds-frame a:nth-child(even) {animation: rotate_bind_2 5s infinite alternate;}
+@keyframes rotate_bind_1 {
+    from {transform: rotate(calc(var(--rotation) - 10deg));}
+}
+@keyframes rotate_bind_2 {
+    from {transform: rotate(calc(var(--rotation) + 10deg));}
+}
