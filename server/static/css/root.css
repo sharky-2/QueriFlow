@@ -1,0 +1,14 @@
+:root {
+
+    /* Colors */
+    --white: white;
+    --dark-white: #E6E6E6;
+    --blue: #1E7EFF;
+    --orange: #FEB037;
+
+    /* Fonts */
+    --title-font: "Fira Code";
+    --subtitle-font: "Roboto";
+    --text-font: "Inter";
+
+}

@@ -1,0 +1,26 @@
+body {
+    background: url("../img/other/bg.png");
+    background-size: auto;
+    background-position: bottom;
+
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text desing */
+.title {
+    font-family: var(--title-font);
+    font-size: 20px;
+}
+.subtitle {
+    font-family: var(--subtitle-font);
+    font-size: 15px;
+    opacity: .5;
+}

@@ -1,0 +1,55 @@
+/* ------------------------------------------------------------------------ */
+/* MAIN: header */
+#header {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header .text-frame {
+    width: 50%;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+    position: relative;
+}
+#header .text-frame .rank-frame {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    gap: 10px;
+}
+#header .text-frame .rank-frame label {
+    padding: 10px 20px;
+    border: .5px solid var(--dark-white);
+    border-radius: 100px;
+
+    transition: all .3s;
+    &:hover {padding: 10px 25px;}
+    cursor: pointer;
+}
+
+#header .keybinds-frame {
+    width: 30%;
+    height: 300px;
+    position: relative;
+}
+#header .keybinds-frame a {position: absolute; transition: all .3s;}
+#header .keybinds-frame a:hover {transform: scale(.97) rotate(var(--rotation));} 
+#header .keybinds-frame a:nth-child(1) {top: 70px; left: -50px; transform: rotate(-15deg); --rotation: -15deg;} 
+#header .keybinds-frame a:nth-child(2) {top: 250px; left: -20px; transform: rotate(13deg); --rotation: 13deg;} 
+#header .keybinds-frame a:nth-child(3) {bottom: -10px; right: 0px; transform: rotate(25deg); --rotation: 25deg;} 
+#header .keybinds-frame a:nth-child(4) {bottom: 150px; right: 20px; transform: rotate(-10deg); --rotation: -10deg;} 
+#header .keybinds-frame a:nth-child(5) {top: 20px; right: 150px; transform: rotate(20deg); --rotation: 20deg;}
+#header .keybinds-frame a:active {transform: scale(.9) rotate(var(--rotation));}
