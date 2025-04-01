@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic UI with Interactive Frames and Automatic Line System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Russo+One&display=swap" rel="stylesheet">
+
+    <!-- Font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Holtwood+One+SC&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Holtwood+One+SC&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/design.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/root.css') }}">
+
+</head>
+<body class="blocks-background">
+    <div class="lines-frame" id="frame1">
+        <div class="header">
+            <img src="../static/img/icons/github.png">
+            <label class="subtitle">Random color</label>
+        </div>
+        <div class="list">
+            <div id="random-color-output" class="item">
+                <label class="table-subtitle">OUTPUT</label>
+                <div class="box">V</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lines-frame" id="frame1">
+        <div class="header">
+            <img src="../static/img/icons/github.png">
+            <label class="subtitle">Random color 2</label>
+        </div>
+        <div class="list">
+            <div id="random-color-2-output" class="item">
+                <label class="table-subtitle">OUTPUT</label>
+                <div class="box">V</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lines-frame" id="frame1">
+        <div class="header">
+            <img src="../static/img/icons/github.png">
+            <label class="subtitle">Timer</label>
+        </div>
+        <div class="list">
+            <div id="time-time" class="item">
+                <label class="table-subtitle">TIME</label>
+                <div class="box">F</div>
+            </div>
+        </div>
+    </div>
+    <div class="lines-frame" id="frame1">
+        <div class="header">
+            <img src="../static/img/icons/github.png">
+            <label class="subtitle">Module</label>
+        </div>
+        <div class="list">
+            <div id="time-time" class="item">
+                <label class="table-subtitle">TIME</label>
+                <div class="box">A</div>
+            </div>
+            <div id="time-module-time" class="item">
+                <label class="table-subtitle">TIME</label>
+                <div class="box">B</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Center Table -->
+    <div class="lines-frame" id="frame1">
+        <div class="header">
+            <img src="../static/img/icons/user (4).png">
+            <label class="subtitle">SERVER MIX</label>
+        </div>
+        <div class="list">
+            <div id="random-color-output" class="item">
+                <label class="table-subtitle">OUTPUT</label>
+                <div class="box">A</div>
+            </div>
+            <div id="random-color-2-output" class="item">
+                <label class="table-subtitle">OUTPUT-2</label>
+                <div class="box">F</div>
+            </div>
+            <div id="time-module-time" class="item">
+                <label class="table-subtitle">OUTPUT-2</label>
+                <div class="box">B</div>
+            </div>
+        </div>
+    </div>
+    <svg id="lines"></svg>
+
+    <script src="../static/script/script.js"></script>
+</body>
+</html>

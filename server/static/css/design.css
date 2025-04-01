@@ -1,9 +1,6 @@
 body {
-    background: url("../img/other/bg.png");
-    background-size: auto;
-    background-position: bottom;
-
-    width: 1000px;
+    width: 1920px;
+    height: 1080px;
     margin: 0 auto;
     padding: 0;
 
@@ -12,6 +9,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (min-height: 1080px) {
+    body {height: 100vh;}
 }
 
 /* Text desing */
@@ -23,4 +23,31 @@ body {
     font-family: var(--subtitle-font);
     font-size: 15px;
     opacity: .5;
+}
+.table-subtitle {
+    font-family: var(--subtitle-font);
+    font-size: 15px;
+    opacity: .5;
+    text-transform: uppercase;
+}
+.menu-subtitle {
+    color: black;
+    font-family: var(--subtitle-font);
+    font-size: 15px;
+    opacity: 1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Other */
+.box-shadow {box-shadow: 0 0 10px 0 var(--dark-white);}
+.blocks-background {
+    background: url("../img/other/cube-outline.png");
+    background-size: 1%;
+    background-position: bottom;
+}
+.dots-background {
+    background: url("../img/other/bg.png");
+    background-size: auto;
+    background-position: bottom;
 }
