@@ -20,9 +20,9 @@ def run_flask():
     app.run(debug=False, use_reloader=False)
 
 if __name__ == "__main__":
-    app.run(debug=True)
-    # flask_thread = threading.Thread(target=run_flask)
-    # flask_thread.start()
+    # app.run(debug=True)
+    flask_thread = threading.Thread(target=run_flask)
+    flask_thread.start()
 
-    # webview.create_window("QueriFlow", "http://127.0.0.1:5000", width=1920, height=1080)
-    # webview.start()
+    webview.create_window("QueriFlow", "http://127.0.0.1:5000", width=1920, height=1080)
+    webview.start()
